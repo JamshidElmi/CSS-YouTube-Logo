@@ -1,0 +1,56 @@
+/**
+*  @project  CSS YouTube Logo
+*  @author   Jamshid Elmi
+*  @created  2022-05-06 19:15:00
+*  @modified 2022-05-06 19:15:00
+*  @tutorial https://youtu.be/r8k-O5b6hMw
+*/
+:root {
+  --height: 85px;
+  --width: 80px;
+  transform: scale(2);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #333;
+  overflow: hidden;
+}
+.youtube {
+  position: relative;
+  width: var(--width);
+  height: var(--height); 
+  background: #E21;
+  padding: 0 15px;
+  border-radius: 50% / 11%;
+}
+.youtube::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -4.5%;
+  border-radius: 5% / 50%;
+}
+.arrow {
+  width: 100%;
+  height: var(--height); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3px;
+}
+.arrow::before {
+  content: "";
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 25px solid #FFF;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
